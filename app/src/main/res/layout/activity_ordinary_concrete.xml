@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".OrdinaryConcreteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shapes"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STIPULATION FOR PROPORTIONING"
+android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="20sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Grade of Concrete"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/gradepinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/SpinnerView"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Characteristic Compressive Strength,fck"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charesteristicStrengthSpinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="value"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Exposure Condition"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/expoSpinner"
+                android:layout_height="50dp"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Workability(mm)"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/workabilitySpinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/SpinnerView"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Maximum Nominal Size of Aggregate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/maxsizeAggSpinner"
+                android:layout_height="50dp"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Types Of Concrete"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/typeConSpinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/SpinnerView"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Types Of Cement"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/typecementSpinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/SpinnerView"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Site Control"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/siteSpinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/SpinnerView"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Method of Placing"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/methodPlaSpinner"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/SpinnerView"
+                android:spinnerMode="dropdown"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Auto w/c Ratio"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+           <ToggleButton
+               android:id="@+id/autowatertb"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Manual w/c Ratio"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/autowaterET"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0.3"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shapes"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Properties Of Aggregate"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Size of Aggregate"
+                style="@style/tvLAbel"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sizeAggregateSpinner"
+                android:layout_height="50dp"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Types of Aggregate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/typeAggregateSpinner"
+                android:layout_height="50dp"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Zone of Fine Aggregate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/zoneoffineaggrSpinner"
+                android:layout_height="50dp"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Aggregate Condition"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/aggregateConditionSpinner"
+                android:layout_height="50dp"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shapes"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chemical And Mineral ADMixture"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:padding="20sp"
+            />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Water Reducing Admixture(%)"
+                        style="@style/tvLAbel"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="20sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/waterreducingET"
+                        android:layout_gravity="bottom"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        style="@style/EditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+                </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cementitious Material Content(%)"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cementetios_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="0"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Water Reduce due to Admixture(%)"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/water_reduced_due_sg_ET"
+                android:layout_gravity="bottom"
+                android:text="0"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Type of Mineral AdMixture"-->
+<!--                style="@style/tvLAbel"-->
+<!--                android:layout_weight="2"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="20sp"-->
+<!--                />-->
+<!--            <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                android:id="@+id/addmixtureSpinner"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:layout_height="50dp"-->
+<!--                style="@style/EditTextStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Value"-->
+<!--                style="@style/tvLAbel"-->
+<!--                android:layout_weight="2"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="20sp"-->
+<!--                />-->
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/admixtureValueET"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:layout_height="50dp"-->
+<!--                style="@style/EditTextStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:text="0"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Flyash(%)"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/flyashET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="GGBS(%)"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/GGBS_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:text="0"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Silica fume(%)"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/silica_fumeET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:text="0"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Metakaonline(%)"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/metakaonlineET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:text="0"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Maxima Plast 300(%)"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/maximaplastET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:text="0"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rice Husk Ash(%)"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ricehuskashET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:text="0"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shapes"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This data can be changed as per laboratory results"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:padding="20sp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Data for materials\n (Specific gravity)"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:padding="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Chemical Admixture"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/chemicalmixture_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="1.145"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cement"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cement_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="3.15"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Coarse Aggregate"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/coarse_agg_sg_ET"
+                android:layout_gravity="bottom"
+                android:text="2.74"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fine Aggregate"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/fine_agg_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:text="2.65"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Flyash"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/flyash_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:text="2.2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="GGBG"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ggbg_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="3.0"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Silica Fume"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/silica_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="2.2"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Matakaoline"
+                style="@style/tvLAbel"
+
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/metakaoline_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="2.6"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Maxima Plast 300"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/maximaplast_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:text="0"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rice Ash Husk"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/rice_ash_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:text="2.36"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shapes"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wastage Material(%)"
+                style="@style/tvLAbel"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20sp"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/wastage_sg_ET"
+                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calculateBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_margin="20dp"
+            android:padding="15sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

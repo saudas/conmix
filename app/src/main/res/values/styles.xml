@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SpinnerView">
+       <item name="android:gravity">center</item>
+        <item name="background">@drawable/spinner_bg</item>
+    </style>
+    <style name="EditTextStyle">
+       <item name="android:gravity">center</item>
+        <item name="background">@drawable/edit_txt_shapes</item>
+        <item name="backgroundTint">@color/purple_500</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="tvLAbel">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="llView">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="tvView">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+</resources>
