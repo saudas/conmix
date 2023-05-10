@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/purple_700"
+    android:background="@color/back_color_main"
     tools:context=".OrdinaryConcreteResultsActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Total Volume"
-
+android:textColor="@color/black"
             android:layout_weight="1"
             android:textSize="16sp"
             />
@@ -31,6 +31,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="1"
+            android:textColor="@color/black"
+
             android:textAlignment="center"
             style="@style/tvView"
             android:layout_weight="1"
@@ -40,6 +42,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="m^3"
+            android:textColor="@color/black"
+
             android:gravity="center"
             android:layout_weight="1"
             android:textSize="16sp"

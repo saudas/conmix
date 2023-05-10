@@ -3,24 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#A7C7E7"
+    android:background="@color/back_color_main"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/backgroundimage"
         android:scaleType="fitCenter"
-        />
+        android:src="@drawable/backgroundimage" />
 
     <Button
         android:id="@+id/ordinaryConcreteBtn"
         android:layout_width="match_parent"
-        android:layout_margin="30dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:padding="20dp"
-        android:text="Mix Design of Ordinary Concrete                    (Grade Up To M60)"
+        android:backgroundTint="@color/back_color"
+        android:text="Mix Design of Ordinary Concrete\n(Grade Up To M60)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
