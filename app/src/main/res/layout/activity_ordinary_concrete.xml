@@ -1047,7 +1047,7 @@ android:textStyle="bold"
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Maxima Plast 300"
+                android:text="Super Plasticizer "
                 style="@style/tvLAbel"
                 android:layout_weight="2"
                 android:gravity="center"
