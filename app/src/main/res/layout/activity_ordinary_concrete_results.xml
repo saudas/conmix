@@ -76,6 +76,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Cement"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -93,6 +95,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -110,6 +114,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="GGBS"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -127,6 +133,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -144,6 +152,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Flyash"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -161,6 +171,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -178,6 +190,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Metakoaline"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -195,6 +209,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -212,6 +228,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Rice Husk Ash"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -229,6 +247,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -246,6 +266,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Silica Fume"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -280,6 +302,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Water"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -314,6 +338,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Fine Aggregate"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -331,6 +357,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -348,6 +376,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Coarse Aggregate"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -382,6 +412,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Chemical Admixture"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />
@@ -399,6 +431,8 @@ android:textColor="@color/black"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="kg"
+                style="@style/tvViewLabel"
+
                 android:layout_weight="1"
                 android:textSize="16sp"
                 />

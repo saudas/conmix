@@ -192,29 +192,78 @@ class GraphDisplayActivity : AppCompatActivity() {
                 graphVal.aircontent = (1.0).toFloat()
                 graphVal.targetCompressiveStrength = (30+1.65*5.0).toFloat()
                 setPieChartData(graphVal)
-            }
-            else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M40){
+            } else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M35){
                 val graphVal = GraphValue()
-                graphVal.watercontent = (201.62*0.77).toFloat()
-                graphVal.watercontentratio = 0.36f
+
+                graphVal.watercontent = (202.0*0.77).toFloat()
+                graphVal.watercontentratio = 0.4f
                 graphVal.cementcontent = (graphVal.watercontent/graphVal.watercontentratio).toFloat()
                 graphVal.volumeofcoarseAggregate = calculateVolumeOfAggregate(graphVal,(0.6546*0.9).toFloat())
 
                 graphVal.volumeoffineAggregate = calculateVolumeOfFineAggregate(graphVal,(1-0.589).toFloat())
+
+                graphVal.aircontent = (1.0).toFloat()
+                graphVal.targetCompressiveStrength = (35+1.65*5.0).toFloat()
+                setPieChartData(graphVal)
+            }
+            else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M40){
+                val graphVal = GraphValue()
+                graphVal.watercontent = (172.0*0.77).toFloat()
+                graphVal.watercontentratio = 0.4f
+                graphVal.cementcontent = (graphVal.watercontent/graphVal.watercontentratio).toFloat()
+                //graphVal.volumeofcoarseAggregate = calculateVolumeOfAggregate(graphVal,(0.6615*0.59).toFloat())
+                graphVal.volumeofcoarseAggregate =  1069f
+                //graphVal.volumeoffineAggregate = calculateVolumeOfFineAggregate(graphVal,(1-0.59).toFloat())
+                graphVal.volumeoffineAggregate =  719f
 
                 graphVal.aircontent = (1.0).toFloat()
                 graphVal.targetCompressiveStrength = (40+1.65*5.0).toFloat()
                 setPieChartData(graphVal)
             }else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M45){
                 val graphVal = GraphValue()
-                graphVal.watercontent = (201.62*0.77).toFloat()
-                graphVal.watercontentratio = 0.36f
+                graphVal.watercontent = (155f).toFloat()
+                graphVal.watercontentratio = 0.41f
                 graphVal.cementcontent = (graphVal.watercontent/graphVal.watercontentratio).toFloat()
-                graphVal.volumeofcoarseAggregate = calculateVolumeOfAggregate(graphVal,(0.6546*0.9).toFloat())
-                graphVal.volumeoffineAggregate = calculateVolumeOfFineAggregate(graphVal,(1-0.589).toFloat())
-
+                //graphVal.volumeofcoarseAggregate = calculateVolumeOfAggregate(graphVal,(0.5904).toFloat())
+                graphVal.volumeofcoarseAggregate = 1032f
+                graphVal.volumeoffineAggregate = 692.58f
+                //graphVal.volumeoffineAggregate = calculateVolumeOfFineAggregate(graphVal,(1-0.5904).toFloat())
                 graphVal.aircontent = (1.0).toFloat()
-                graphVal.targetCompressiveStrength = (40+1.65*5.0).toFloat()
+                graphVal.targetCompressiveStrength = (45+1.65*5.0).toFloat()
+                setPieChartData(graphVal)
+            }else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M50){
+                val graphVal = GraphValue()
+                graphVal.watercontent = (147.6).toFloat()
+                graphVal.watercontentratio = 0.348f
+                graphVal.cementcontent = (graphVal.watercontent/graphVal.watercontentratio).toFloat()
+               // graphVal.volumeofcoarseAggregate = calculateVolumeOfAggregate(graphVal,(0.55).toFloat())
+                graphVal.volumeofcoarseAggregate = 706f
+                graphVal.volumeoffineAggregate = 621f
+                //graphVal.volumeoffineAggregate = calculateVolumeOfFineAggregate(graphVal,(1-0.55).toFloat())
+                graphVal.aircontent = (1.0).toFloat()
+                graphVal.targetCompressiveStrength = (50+1.65*5.0).toFloat()
+                setPieChartData(graphVal)
+            }else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M55){
+                val graphVal = GraphValue()
+                graphVal.watercontent = (137).toFloat()
+                graphVal.watercontentratio = 0.349f
+                graphVal.cementcontent = (graphVal.watercontent/graphVal.watercontentratio).toFloat()
+               // graphVal.volumeofcoarseAggregate = calculateVolumeOfAggregate(graphVal,(0.5904).toFloat())
+                graphVal.volumeofcoarseAggregate = 726f
+                graphVal.volumeoffineAggregate =  660f
+               // graphVal.volumeoffineAggregate = calculateVolumeOfFineAggregate(graphVal,(1-0.5904).toFloat())
+                graphVal.aircontent = (1.0).toFloat()
+                graphVal.targetCompressiveStrength = (55+1.65*5.0).toFloat()
+                setPieChartData(graphVal)
+            } else if (stipulateProportion.gradeOfConcrete == GradeOfConcrete.M60){
+                val graphVal = GraphValue()
+                graphVal.watercontent = (166.4).toFloat()
+                graphVal.watercontentratio = 0.3199f
+                graphVal.cementcontent = (graphVal.watercontent/graphVal.watercontentratio).toFloat()
+                graphVal.volumeofcoarseAggregate = 1094f
+                graphVal.volumeoffineAggregate = 703f
+                graphVal.aircontent = (1.0).toFloat()
+                graphVal.targetCompressiveStrength = (60+1.65*5.0).toFloat()
                 setPieChartData(graphVal)
             }
             else{

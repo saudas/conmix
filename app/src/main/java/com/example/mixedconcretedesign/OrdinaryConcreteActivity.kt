@@ -392,20 +392,33 @@ fun setET(){
                     }
                     5->{
                         setValueForCompressiveStrenth(35)
+                        expoSpinner.setSelection(1)
+                        workabilitySpinner.setSelection(8)
                     }
                     6->{
                         setValueForCompressiveStrenth(40)
+                        expoSpinner.setSelection(0)
+                        workabilitySpinner.setSelection(22)
                     }
                     7->{
                         setValueForCompressiveStrenth(45)
+                        expoSpinner.setSelection(2)
+                        workabilitySpinner.setSelection(22)
                     }
                     8->{
                         setValueForCompressiveStrenth(50)
+                        expoSpinner.setSelection(2)
+                        workabilitySpinner.setSelection(22)
                     }
                     9->{
                         setValueForCompressiveStrenth(55)
+                        expoSpinner.setSelection(1)
+                        workabilitySpinner.setSelection(28)
+                        methodPlaSpinner.setSelection(1)
                     }10->{
                         setValueForCompressiveStrenth(60)
+                        expoSpinner.setSelection(1)
+                        workabilitySpinner.setSelection(8)
                     }
                 }
 
