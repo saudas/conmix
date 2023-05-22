@@ -78,8 +78,40 @@ class GraphDisplayActivity : AppCompatActivity() {
         waterVal.text = ""+graphval.watercontent
         fineaggVal.text = ""+graphval.volumeoffineAggregate
         coarseaggVal.text = ""+graphval.volumeofcoarseAggregate
+        if(stipulateProportion.gradeOfConcrete == GradeOfConcrete.M40) {
+            val result = (4.74f/1.145f)*(1f/1000f)
+            stipulateProportion.chemicaladmixture = result.toDouble()
+            stipulateProportion.admixturevalue = result.toDouble()
 
-        chemadVal.text = ""+stipulateProportion.admixturevalue
+            chemadVal.text = "" + result
+        }else if(stipulateProportion.gradeOfConcrete == GradeOfConcrete.M20||stipulateProportion.gradeOfConcrete == GradeOfConcrete.M25 || stipulateProportion.gradeOfConcrete == GradeOfConcrete.M30){
+            val result = (1.145f/1.145f)*(1f/1000f)
+            stipulateProportion.chemicaladmixture = result.toDouble()
+            stipulateProportion.admixturevalue = result.toDouble()
+
+
+            chemadVal.text = "" + result
+        }else if(stipulateProportion.gradeOfConcrete == GradeOfConcrete.M50){
+            val result = (4.994f/1.145f)*(1f/1000f)
+            stipulateProportion.chemicaladmixture = result.toDouble()
+            stipulateProportion.admixturevalue = result.toDouble()
+
+
+            chemadVal.text = "" + result
+        }else if(stipulateProportion.gradeOfConcrete == GradeOfConcrete.M60){
+            val result = (5.2f/1.145f)*(1f/1000f)
+            stipulateProportion.chemicaladmixture = result.toDouble()
+            stipulateProportion.admixturevalue = result.toDouble()
+
+
+            chemadVal.text = "" + result
+        }
+
+
+        else{
+            chemadVal.text = "" + stipulateProportion.admixturevalue
+
+        }
         silicafumeVal.text = ""+stipulateProportion.silica_fume_value
         ricehuskVal.text = ""+stipulateProportion.ricehuskash_value
         metakoalineVal.text = ""+stipulateProportion.metakaonline_value

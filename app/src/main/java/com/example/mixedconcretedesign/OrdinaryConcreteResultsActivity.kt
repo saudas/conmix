@@ -59,6 +59,8 @@ graphValue = intent.getSerializableExtra("gv") as GraphValue
         fineaggVal.text = ""+graphval.volumeoffineAggregate*multiplier
         coarseaggVal.text = ""+graphval.volumeofcoarseAggregate*multiplier
 
+
+
         chemadVal.text = ""+stipulateProportion.admixturevalue*multiplier
         silicafumeVal.text = ""+stipulateProportion.silica_fume_value*multiplier
         ricehuskVal.text = ""+stipulateProportion.ricehuskash_value*multiplier

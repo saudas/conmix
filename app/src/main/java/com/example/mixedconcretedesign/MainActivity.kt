@@ -7,9 +7,10 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.widget.AppCompatButton
 
 class MainActivity : AppCompatActivity() {
-    lateinit var ordinaryConcreteBtn : TextView
+    lateinit var ordinaryConcreteBtn : AppCompatButton
     lateinit var imageView : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
